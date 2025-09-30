@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HopeCrumbs</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/logo/logo.png" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <i class="bx bx-menu"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="produk.html">Products</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="py-5">
+      <div class="menu container">
+        <div class="menu-title text-center">
+          <h1 class="mb-3 fw-bold">Menu</h1>
+          <p class="mb-5">
+            Setiap gigitan, manisnya selalu menemani momen spesialmu.
+          </p>
+        </div>
+
+        <div class="ttitle">
+          <h2 class="mb-3 fw-bold">Muffins</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="menu/muffins/Almond Redberry.jpeg"
+                class="card-img-top"
+                style="border-radius: 30px; height: 100%; object-fit: cover"
+                alt="Almond Redberry"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Almond Redberry</h5>
+                <p class="card-text">Rp 22.000</p>
+                <a
+                  href="kontak.html"
+                  class="btn menu-btn btn-sm"
+                  onclick="pilihProduk('Almond Redberry', 22000, 'Muffins')"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="menu/muffins/Banana Nut.jpeg"
+                class="card-img-top"
+                style="border-radius: 30px; height: 100%; object-fit: cover"
+                alt="Banana Nut"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Banana Nut</h5>
+                <p class="card-text">Rp 20.000</p>
+                <a
+                  href="kontak.html"
+                  class="btn menu-btn btn-sm"
+                  onclick="pilihProduk('Banana Nut', 20000, 'Muffins')"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="menu/muffins/Berry Bliss.jpg"
+                class="card-img-top"
+                style="border-radius: 30px; height: 100%; object-fit: cover"
+                alt="Berry Bliss"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Berry Bliss</h5>
+                <p class="card-text">Rp 22.000</p>
+                <a
+                  href="kontak.html"
+                  class="btn menu-btn btn-sm"
+                  onclick="pilihProduk('Berry Bliss', 22000, 'Muffins')"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="menu/muffins/Blue Moonberry.jpg"
+                class="card-img-top"
+                style="border-radius: 30px; height: 100%; object-fit: cover"
+                alt="Blue Moonberry"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Blue Moonberry</h5>
+                <p class="card-text">Rp 22.000</p>
+                <a
+                  href="kontak.html"
+                  class="btn menu-btn btn-sm"
+                  onclick="pilihProduk('Blue Moonberry', 22000, 'Muffins')"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="menu/muffins/Blush Strawberry.jpg"
+                class="card-img-top"
+                style="border-radius: 30px; height: 100%; object-fit: cover"
+                alt="Blush Strawberry"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Blush Strawberry</h5>
+                <p class="card-text">Rp 22.000</p>
+                <a
+                  href="kontak.html"
+                  class="btn menu-btn btn-sm"
+                  onclick="pilihProduk('Blush Strawberry', 22000, 'Muffins')"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="menu/muffins/Cheese Velvet.jpeg"
+                class="card-img-top"
+                style="border-radius: 30px; height: 100%; object-fit: cover"
+                alt="Cheese Velvet"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cheese Velvet</h5>
+                <p class="card-text">Rp 25.000</p>
+                <a
+                  href="kontak.html"
+                  class="btn menu-btn btn-sm"
+                  onclick="pilihProduk('Cheese Velvet', 25000, 'Muffins')"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="menu/muffins/Choco Craze.jpeg"
+                class="card-img-top"
+                style="border-radius: 30px; height: 100%; object-fit: cover"
+                alt="Choco Craze"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Choco Craze</h5>
+                <p class="card-text">Rp 20.000</p>
+                <a
+                  href="kontak.html"
+                  class="btn menu-btn btn-sm"
+                  onclick="pilihProduk('Choco Craze', 20000, 'Muffins')"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="menu/muffins/Emerald Pistachio.jpeg"
+                class="card-img-top"
+                style="border-radius: 30px; height: 100%; object-fit: cover"
+                alt="Emerald Pistachio"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Emerald Pistachio</h5>
+                <p class="card-text">Rp 25.000</p>
+                <a
+                  href="kontak.html"
+                  class="btn menu-btn btn-sm"
+                  onclick="pilihProduk('Emerald Pistachio', 25000, 'Muffins')"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="menu/muffins/Midnight Choco.jpg"
+                class="card-img-top"
+                style="border-radius: 30px; height: 100%; object-fit: cover"
+                alt="Midnight Choco"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Midnight Choco</h5>
+                <p class="card-text">Rp 20.000</p>
+                <a
+                  href="kontak.html"
+                  class="btn menu-btn btn-sm"
+                  onclick="pilihProduk('Midnight Choco', 20000, 'Muffins')"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="menu/muffins/Snow Blueberry.jpg"
+                class="card-img-top"
+                style="border-radius: 30px; height: 100%; object-fit: cover"
+                alt="Snow Blueberry"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Snow Blueberry</h5>
+                <p class="card-text">Rp 22.000</p>
+                <a
+                  href="kontak.html"
+                  class="btn menu-btn btn-sm"
+                  onclick="pilihProduk('Snow Blueberry', 22000, 'Muffins')"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="menu/muffins/Sunrise Carrot.jpeg"
+                class="card-img-top"
+                style="border-radius: 30px; height: 100%; object-fit: cover"
+                alt="Sunrise Carrot"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sunrise Carrot</h5>
+                <p class="card-text">Rp 22.000</p>
+                <a
+                  href="kontak.html"
+                  class="btn menu-btn btn-sm"
+                  onclick="pilihProduk('Sunrise Carrot', 22000, 'Muffins')"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pagination -->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center mt-4">
+        <li class="page-item">
+          <a class="page-link" href="menu.html"><</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="menu.html">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="cake.html">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="cookies.html">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="cupcakes.html">4</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="muffins.html">5</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="text-white py-4" style="background-color: #995d3d">
+      <div class="Logo container">
+        <div class="row">
+          <!-- Logo & Deskripsi -->
+          <div class="col-md-4 mb-3">
+            <a href="index.html">
+              <img
+                src="assets/logo/logo.png"
+                alt="HopeCrumbs Logo"
+                width="224"
+                height="48"
+                class="mb-2"
+              />
+            </a>
+            <p>Kue manis, momen manis. Teman setia setiap perayaanmu.</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-4 mb-3">
+            <h5 class="fw-semibold">Navigasi</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-white text-decoration-none"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#about"
+                  class="text-white text-decoration-none"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="menu.html" class="text-white text-decoration-none"
+                  >Menu</a
+                >
+              </li>
+              <li>
+                <a href="produk.html" class="text-white text-decoration-none"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a href="kontak.html" class="text-white text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kontak -->
+          <div class="col-md-4 mb-3">
+            <h5 class="fw-semibold">Kontak</h5>
+            <p>Email: hopecrumbs@gmail.com</p>
+            <p>
+              Instagram:
+              <a
+                href="https://www.instagram.com/shinsyinshod?igsh=NXlsMTVpcnYwYWU="
+                target="_blank"
+                class="text-white text-decoration-none"
+              >
+                @shinsyinshod
+              </a>
+            </p>
+            <p>Alamat: Jember, Jawa Timur</p>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center pt-3 mt-3 border-top">
+          <small>© 2025 HopeCrumbs. All Rights Reserved.</small>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function pilihProduk(nama, harga, kategori) {
+        // Ambil produk yang sudah dipilih sebelumnya
+        let selected = JSON.parse(
+          localStorage.getItem("selectedProducts") || "[]"
+        );
+        // Cek apakah produk sudah ada, jika belum tambahkan
+        if (!selected.some((p) => p.nama === nama && p.kategori === kategori)) {
+          selected.push({ nama, harga, kategori });
+          localStorage.setItem("selectedProducts", JSON.stringify(selected));
+        }
+      }
+    </script>
+  </body>
+</html>

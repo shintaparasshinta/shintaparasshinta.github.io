@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HopeCrumbs</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/logo/logo.png" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <i class="bx bx-menu"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="produk.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kontak.html">Kontak</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="order-container">
+        <h2 class="text-center fw-bold mb-4">Formulir Order</h2>
+        <form id="orderForm">
+          <div class="mb-3">
+            <label class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" name="nama" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">No. Telepon</label>
+            <input type="tel" class="form-control" name="telepon" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Alamat Lengkap</label>
+            <textarea
+              class="form-control"
+              name="alamat"
+              rows="3"
+              required
+            ></textarea>
+          </div>
+
+          <!-- Hapus kategori, tampilkan semua produk sebagai checkbox -->
+          <div class="mb-3">
+            <label class="form-label">Menu yang Dipesan</label>
+            <div id="menuCheckboxes" class="row"></div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label fw-bold"
+              >Total Harga (+ Fee Rp10.000):</label
+            >
+            <div id="totalHarga" class="fw-bold text-success">Rp0</div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Catatan Tambahan</label>
+            <textarea class="form-control" name="catatan" rows="2"></textarea>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Kode Voucher</label>
+            <input
+              type="text"
+              class="form-control"
+              id="voucherInput"
+              placeholder="Masukkan kode voucher (didapat setelah follow IG kami)"
+            />
+            <div id="voucherInfo" class="text-success small mt-1"></div>
+          </div>
+
+          <button type="submit" class="btn btn-order w-100">
+            Pesan Sekarang
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-white py-4" style="background-color: #995d3d">
+      <div class="Logo container">
+        <div class="row">
+          <!-- Logo & Deskripsi -->
+          <div class="col-md-4 mb-3">
+            <a href="index.html">
+              <img
+                src="assets/logo/logo.png"
+                alt="HopeCrumbs Logo"
+                width="224"
+                height="48"
+                class="mb-2"
+              />
+            </a>
+            <p>Kue manis, momen manis. Teman setia setiap perayaanmu.</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-4 mb-3">
+            <h5 class="fw-semibold">Navigasi</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-white text-decoration-none"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#about"
+                  class="text-white text-decoration-none"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="menu.html" class="text-white text-decoration-none"
+                  >Menu</a
+                >
+              </li>
+              <li>
+                <a href="produk.html" class="text-white text-decoration-none"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a href="kontak.html" class="text-white text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kontak -->
+          <div class="col-md-4 mb-3">
+            <h5 class="fw-semibold">Kontak</h5>
+            <p>Email: hopecrumbs@gmail.com</p>
+            <p>
+              Instagram:
+              <a
+                href="https://www.instagram.com/shinsyinshod?igsh=NXlsMTVpcnYwYWU="
+                target="_blank"
+                class="text-white text-decoration-none"
+              >
+                @shinsyinshod
+              </a>
+            </p>
+            <p>Alamat: Jember, Jawa Timur</p>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center pt-3 mt-3 border-top">
+          <small>© 2025 HopeCrumbs. All Rights Reserved.</small>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      const allProducts = [
+        { kategori: "Bread", nama: "Apple Cinnamon Loaf", harga: 35000 },
+        { kategori: "Bread", nama: "Choco Babka Twist", harga: 40000 },
+        { kategori: "Bread", nama: "Cinnamon Swirl Roll", harga: 30000 },
+        { kategori: "Bread", nama: "Classic Croissant", harga: 20000 },
+        { kategori: "Bread", nama: "Coffee Bun Bliss", harga: 18000 },
+        { kategori: "Bread", nama: "Creamy Garlic Bun", harga: 22000 },
+        { kategori: "Bread", nama: "Fluffy Brioche", harga: 25000 },
+        { kategori: "Bread", nama: "Garlic Delight Toast", harga: 28000 },
+        { kategori: "Bread", nama: "Golden Bagel", harga: 20000 },
+        { kategori: "Bread", nama: "Rustic Sourdough", harga: 45000 },
+        { kategori: "Bread", nama: "Soft Ciabatta Roll", harga: 25000 },
+        { kategori: "Cakes", nama: "Basque Cheesecake", harga: 180000 },
+        { kategori: "Cakes", nama: "Berry Fantasy Cake", harga: 210000 },
+        { kategori: "Cakes", nama: "Berry Frost Cake", harga: 200000 },
+        { kategori: "Cakes", nama: "Caramel Pecan", harga: 230000 },
+        { kategori: "Cakes", nama: "Choco Strawberry Bliss", harga: 220000 },
+        { kategori: "Cakes", nama: "CinnaHoney Cheesecake", harga: 190000 },
+        {
+          kategori: "Cakes",
+          nama: "Classic Strawberry Shortcake",
+          harga: 210000,
+        },
+        { kategori: "Cakes", nama: "Dark Choco Fudge", harga: 185000 },
+        { kategori: "Cakes", nama: "Lavender Blue", harga: 210000 },
+        { kategori: "Cakes", nama: "Purple Charm", harga: 210000 },
+        { kategori: "Cakes", nama: "Velvet Dream", harga: 230000 },
+        { kategori: "Cookies", nama: "Chewy Choco Chip", harga: 15000 },
+        { kategori: "Cookies", nama: "Dark Choco Fudge Chunk", harga: 17000 },
+        { kategori: "Cookies", nama: "Double Choco Chunk", harga: 17000 },
+        { kategori: "Cookies", nama: "Galaxy Swirl Cookie", harga: 20000 },
+        { kategori: "Cookies", nama: "Lemon Blueberry Crumble", harga: 18000 },
+        { kategori: "Cookies", nama: "Matcha Choco", harga: 18000 },
+        { kategori: "Cookies", nama: "Oreo Velvet", harga: 18000 },
+        { kategori: "Cookies", nama: "Pink Sugar Cookie", harga: 15000 },
+        { kategori: "Cookies", nama: "Purple Velvet Cookie", harga: 18000 },
+        { kategori: "Cookies", nama: "Strawberry Choco Chip", harga: 18000 },
+        { kategori: "Cookies", nama: "Strawberry Frost", harga: 20000 },
+        { kategori: "Cupcakes", nama: "Berry Lemon", harga: 25000 },
+        { kategori: "Cupcakes", nama: "Berry White", harga: 25000 },
+        { kategori: "Cupcakes", nama: "Biscoff Bliss", harga: 28000 },
+        { kategori: "Cupcakes", nama: "Blueberry White Choco", harga: 28000 },
+        { kategori: "Cupcakes", nama: "Choco Peanut Crunch", harga: 28000 },
+        { kategori: "Cupcakes", nama: "Lemon Delight", harga: 25000 },
+        { kategori: "Cupcakes", nama: "Mint Bliss", harga: 25000 },
+        { kategori: "Cupcakes", nama: "Mocha Nut", harga: 28000 },
+        { kategori: "Cupcakes", nama: "Oreo Crumble", harga: 28000 },
+        { kategori: "Cupcakes", nama: "Raspberry Swirl", harga: 28000 },
+        { kategori: "Cupcakes", nama: "Vanilla Dream", harga: 25000 },
+        { kategori: "Muffins", nama: "Almond Redberry", harga: 22000 },
+        { kategori: "Muffins", nama: "Banana Nut", harga: 20000 },
+        { kategori: "Muffins", nama: "Berry Bliss", harga: 22000 },
+        { kategori: "Muffins", nama: "Blue Moonberry", harga: 22000 },
+        { kategori: "Muffins", nama: "Blush Strawberry", harga: 22000 },
+        { kategori: "Muffins", nama: "Cheese Velvet", harga: 25000 },
+        { kategori: "Muffins", nama: "Choco Craze", harga: 20000 },
+        { kategori: "Muffins", nama: "Emerald Pistachio", harga: 25000 },
+        { kategori: "Muffins", nama: "Midnight Choco", harga: 20000 },
+        { kategori: "Muffins", nama: "Snow Blueberry", harga: 22000 },
+        { kategori: "Muffins", nama: "Sunrise Carrot", harga: 22000 },
+      ];
+
+      const menuCheckboxes = document.getElementById("menuCheckboxes");
+      const totalHargaDiv = document.getElementById("totalHarga");
+      const fee = 10000;
+      let voucherActive = false;
+
+      // Tampilkan produk sebagai grid 2 kolom per kategori
+      function tampilkanSemuaProduk() {
+        menuCheckboxes.innerHTML = "";
+        let kategoriNow = "";
+        let idx = 0;
+        let kategoriRow;
+        // Ambil produk yang dipilih dari localStorage
+        const selected = JSON.parse(
+          localStorage.getItem("selectedProducts") || "[]"
+        );
+        allProducts.forEach((product) => {
+          if (product.kategori !== kategoriNow) {
+            kategoriNow = product.kategori;
+            kategoriRow = document.createElement("div");
+            kategoriRow.className = "col-12 mb-2";
+            kategoriRow.innerHTML = `<div class="fw-bold mt-2 mb-1">${kategoriNow}</div><div class="row"></div>`;
+            menuCheckboxes.appendChild(kategoriRow);
+          }
+          const checkbox = document.createElement("input");
+          checkbox.type = "checkbox";
+          checkbox.value = product.harga;
+          checkbox.id = "menu_" + idx;
+          checkbox.name = "menu";
+          checkbox.classList.add("form-check-input");
+          checkbox.setAttribute("data-nama", product.nama);
+          checkbox.setAttribute("data-kategori", product.kategori);
+          // Jika produk ada di selected, centang otomatis
+          if (
+            selected.some(
+              (p) => p.nama === product.nama && p.kategori === product.kategori
+            )
+          ) {
+            checkbox.checked = true;
+          }
+          checkbox.addEventListener("change", hitungTotal);
+
+          const label = document.createElement("label");
+          label.htmlFor = "menu_" + idx;
+          label.classList.add("form-check-label");
+          label.textContent = `${
+            product.nama
+          } — Rp${product.harga.toLocaleString("id-ID")}`;
+
+          const div = document.createElement("div");
+          div.className = "form-check col-12 col-md-6";
+          div.appendChild(checkbox);
+          div.appendChild(label);
+
+          kategoriRow.querySelector(".row").appendChild(div);
+          idx++;
+        });
+        // Setelah render, hitung total
+        hitungTotal();
+        // Hapus selectedProducts dari localStorage agar tidak double
+        localStorage.removeItem("selectedProducts");
+      }
+      tampilkanSemuaProduk();
+
+      const voucherInput = document.getElementById("voucherInput");
+      const voucherInfo = document.getElementById("voucherInfo");
+
+      voucherInput.addEventListener("input", function () {
+        if (this.value.trim().toUpperCase() === "HOPE30") {
+          voucherActive = true;
+          voucherInfo.textContent = "Voucher aktif! Diskon 30% dan tanpa fee.";
+        } else {
+          voucherActive = false;
+          voucherInfo.textContent = "";
+        }
+        hitungTotal();
+      });
+
+      // Hitung total harga produk yang dicentang + fee
+      function hitungTotal() {
+        let total = 0;
+        document
+          .querySelectorAll('#menuCheckboxes input[type="checkbox"]:checked')
+          .forEach((cb) => {
+            total += parseInt(cb.value, 10);
+          });
+        if (total > 0) {
+          if (voucherActive) {
+            total = Math.round(total * 0.7); // diskon 30%
+          } else {
+            total += fee;
+          }
+        }
+        totalHargaDiv.textContent = "Rp" + total.toLocaleString("id-ID");
+      }
+
+      document
+        .getElementById("orderForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          Swal.fire({
+            title: "Pesanan Berhasil!",
+            text: "Terima kasih sudah memesan di HopeCrumbs 🍰",
+            icon: "success",
+            confirmButtonText: "OK",
+            confirmButtonColor: "#995d3d",
+          });
+          this.reset();
+          tampilkanSemuaProduk();
+          totalHargaDiv.textContent = "Rp0";
+        });
+    </script>
+  </body>
+</html>

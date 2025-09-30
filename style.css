@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f7e090, #fff8e1, #f7e090);
+  padding-top: 60px;
+}
+
+.navbar-custom {
+  background: rgba(158, 104, 65, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar-nav .nav-item {
+  text-align: center;
+}
+
+.navbar-custom .nav-link {
+  color: #fff8e1 !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #995d3d !important;
+}
+
+.navbar-brand img {
+  margin-left: -70px;
+  height: 48px;
+  width: 224px;
+  object-fit: contain;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler i {
+  font-size: 1.8rem;
+  color: #fff8e1; 
+}
+
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(158, 104, 65, 0.6), rgba(158, 104, 65, 0.6)),
+    url("hero1.jpeg") center/cover no-repeat;
+  color: #fff8e1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-title span {
+  color: #f7e090;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin: 20px 0;
+}
+
+.btn-hero {
+  background-color: #9e6841;
+  color: #fff8e1;
+  padding: 10px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  margin: 0 10px;
+}
+
+.btn-hero:hover {
+  background-color: #fff8e1;
+  color: #9e6841;
+}
+
+.btn-outline-hero {
+  border: 2px solid #fff8e1;
+  color: #fff8e1;
+  padding: 10px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  margin: 0 10px;
+}
+
+.btn-outline-hero:hover {
+  background-color: #fff8e1;
+  color: #9e6841;
+}
+
+.kategori .kategori-card {
+  background-color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.kategori-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.kategori-card img {
+  padding: 10px;
+  border-radius: 30px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kategori,
+h2 {
+  color: #995d3d;
+}
+
+.kategori .card-title {
+  color: #995d3d;
+  font-weight: bold;
+}
+
+.kategori .card-text {
+  color: #995d3d;
+}
+
+.abt-p {
+  max-width: 750px;
+  margin: 0 auto;
+  color: #995d3d;
+  font-size: 1.1rem;
+}
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #995d3d;
+  color: #fff8e1;
+}
+
+.logo,
+h5 {
+  color: #fff8e1;
+  font-weight: bold;
+}
+
+.menu {
+  color: #995d3d;
+}
+
+.menu-card {
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.menu-card {
+  padding: 15px;
+}
+
+.menu-btn {
+  background-color: #fff8e1;
+  color: #995d3d;
+  padding: 8px 100px;
+  align-items: center;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.menu-btn:hover {
+  background-color: #b18243;
+  color: #fff8e1;
+}
+
+.pagination .page-link {
+  color: #b18243; /* cokelat khas */
+  border-radius: 8px;
+  margin: 0 4px;
+}
+
+.pagination .page-link:hover {
+  background-color: #b18243;
+  color: #fff8e1;
+}
+
+.pagination .active .page-link {
+  background-color: #b18243;
+  border-color: #b18243;
+  color: #fff8e1;
+}
+
+.table thead {
+  background-color: #995d3d;
+  color: #fff8e1;
+}
+
+.table tbody {
+  background-color: #fff8e1;
+  color: #995d3d;
+}
+
+.order-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  color: #7a472f;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+.btn-order {
+  background-color: #995d3d;
+  color: #fff;
+  font-weight: 600;
+}
+.btn-order:hover {
+  background-color: #7a472f;
+  color: #fff;
+}
